@@ -6,7 +6,7 @@
 # catalog-version 0.2
 Name:		texlive-reflectgraphics
 Version:	0.2
-Release:	1
+Release:	2
 Summary:	Techniques for reflecting graphics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/reflectgraphics
