@@ -1,12 +1,6 @@
-# revision 32181
-# category Package
-# catalog-ctan /macros/latex/contrib/reflectgraphics
-# catalog-date 2013-11-18 17:49:17 +0100
-# catalog-license lppl1.3
-# catalog-version 0.2
 Name:		texlive-reflectgraphics
-Version:	0.2
-Release:	9
+Version:	0.2c
+Release:	1
 Summary:	Techniques for reflecting graphics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/reflectgraphics
@@ -34,12 +28,10 @@ document.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/reflectgraphics/reflectgraphics.sty
-%doc %{_texmfdistdir}/doc/latex/reflectgraphics/README
-%doc %{_texmfdistdir}/doc/latex/reflectgraphics/reflectgraphics.pdf
+%{_texmfdistdir}/tex/latex/reflectgraphics
+%doc %{_texmfdistdir}/doc/latex/reflectgraphics
 #- source
-%doc %{_texmfdistdir}/source/latex/reflectgraphics/reflectgraphics.dtx
-%doc %{_texmfdistdir}/source/latex/reflectgraphics/reflectgraphics.ins
+%doc %{_texmfdistdir}/source/latex/reflectgraphics
 
 #-----------------------------------------------------------------------
 %prep
