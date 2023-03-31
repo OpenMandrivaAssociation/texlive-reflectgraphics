@@ -1,6 +1,6 @@
 Name:		texlive-reflectgraphics
 Version:	40612
-Release:	1
+Release:	2
 Summary:	Techniques for reflecting graphics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/reflectgraphics
