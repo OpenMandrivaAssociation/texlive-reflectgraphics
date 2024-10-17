@@ -3,7 +3,7 @@ Version:	40612
 Release:	2
 Summary:	Techniques for reflecting graphics
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/reflectgraphics
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/reflectgraphics
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/reflectgraphics.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/reflectgraphics.doc.r%{version}.tar.xz
