@@ -1,45 +1,22 @@
-Name:		texlive-reflectgraphics
-Version:	40612
-Release:	2
+%global tl_name reflectgraphics
+%global tl_revision 40612
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	0.2c
+Release:	%{tl_revision}.1
 Summary:	Techniques for reflecting graphics
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/reflectgraphics
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/reflectgraphics.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/reflectgraphics.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/reflectgraphics.source.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/reflectgraphics.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/reflectgraphics.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/reflectgraphics.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package provides a macro for reflecting images, in a number
-of different ways, in pursuit of "more striking" graphics in a
-document.
+The package provides a macro for reflecting images, in a number of
+different ways, in pursuit of "more striking" graphics in a document.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/reflectgraphics
-%doc %{_texmfdistdir}/doc/latex/reflectgraphics
-#- source
-%doc %{_texmfdistdir}/source/latex/reflectgraphics
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
